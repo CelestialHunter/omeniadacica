@@ -1,0 +1,40 @@
+.html {
+    scroll-behavior: smooth;
+}
+
+.events-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.events-main {    
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: url("../res/images/events_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: cover;
+    background-attachment:fixed;
+    position: static;
+    min-height: 100%;
+}
+
+.events-title {
+    display:flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.events-title div {
+    color:white;
+    font-size: 50px;
+    align-self: center;
+}
