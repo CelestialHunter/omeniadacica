@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/global_style.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/landing.css">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+    <link href='https://css.gg/css' rel='stylesheet'/>
+    <title>Omenia Dacica</title>
+</head>
+
+<body class="landing-body">
+    <script src="../scripts/scriptFile.js"></script>
+    <nav class="navbar">
+        <img src="../res/logo/logo_short.svg" onclick="home()"/>
+        <a class="currentPage" href="#prezentare">Presentation</a>
+        <a href="proiecte.html">Projects</a>
+        <a href="evenimente.html">Events</a>
+        <a href="support.html">Join us!</a>
+        <a href="contact.html">Contact</a>
+        <div>
+            <span class="fi fi-ro" style="cursor:pointer" onclick="romanian('index')"> </span>
+        </div>
+    </nav>
+
+    <div class="landing-main">
+        <div class="landing-title">
+            <img src="../res/logo/text_short.svg"> </img>
+            <div> Together we can do more! </div>
+        </div>         
+        <div class="findMore" onClick="prezentare()">
+                Learn more
+                <i class="gg-chevron-down"></i>
+            </a>
+        </div>
+        <div class="aboutCard" id="prezentare">
+            <div class="title">
+                OUR OBJECTIVE
+            </div>
+
+            <div class="description">
+                <ul>
+                    <li>Improving citizens' quality of life</li>
+                    <li>Promoting dignity</li>
+                    <li>Guaranteeing the rights to growth and a healthy life</li>
+                    <li>Raising self-sustaining capacities of the elderly</li>
+                    <li>Social and juridicial aid and counseling</li>
+                    <li>Facilitating relations with public autorities and local and national institutions</li>
+                    <li>Offering couseling, material and financial aid</li>
+                    <li>Promoting volunteering</li>                   
+                </ul>
+            </div>
+        </div>
+        <button type=button class="cta-button" onclick="cta()">Join us!</button>
+    </div>
+    
+</body>
+
+</html>

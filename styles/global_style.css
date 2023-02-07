@@ -1,0 +1,9 @@
+:root {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+:root::-webkit-scrollbar {
+    display: none;
+}
