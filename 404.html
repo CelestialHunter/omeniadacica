@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global_style.css">
+</head>
+
+<style>
+    .backButton {
+        cursor: pointer;
+        background-color: #7D624D;
+        color: white;
+        width: 10vw;
+        border-radius: 1vw;
+        font-size: 2vw;
+        margin: 1vw;
+
+        transition: 0.5s;
+    }
+
+    .backButton:hover {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+</style>
+
+<body>
+    <div style="margin: auto; width: 80vw; border: 1vw solid #7D624D;">
+        <center>
+            <h1 style="font-size: 4vw;">404<br>not found</h1>
+            <img src="res/logo/logo_full.svg" width=50% style="background-color: white;"/>
+            <h1 style="font-size: 3vw;">WORK IN PROGRESS</h1>
+            <script>
+                function goBack() {
+                    window.location.href = "index.html";
+                }
+            </script>
+            <div onClick="goBack()" 
+                class="backButton">
+                Back
+            </div>
+        </center>
+    </div>
+    
+</body>
+
+</html>
