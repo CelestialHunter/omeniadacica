@@ -16,18 +16,42 @@
         <img src="res/logo/logo_short.svg" onclick="home()"/>
         <a href="index.html">Prezentare</a>
         <a href="proiecte.html">Proiecte</a>
-        <a class="currentPage" href="evenimente.html">Evenimente</a>
+        <div class="nav_drop">
+            <a href="evenimente.html" class="currentPage">Evenimente</a>
+            <span class="nav_drop_content">
+                <span class="nav_drop_item" onClick="alert('Culturale - WIP')">Culturale</span>
+                <span class="nav_drop_item" onClick="alert('Muzicale - WIP')">Muzicale</span>
+                <span class="nav_drop_item" onClick="alert('Istorice - WIP')">Istorice</span>   
+            </span>
+        </div>
         <a href="support.html">Vino alături de noi!</a>
         <a href="contact.html">Contact</a>
         <div>
-            <span class="fi fi-gb" style="cursor:pointer" onclick="english('evenimente')"> </span>
+            <span class="fi fi-gb lang" style="cursor:pointer" onclick="english('index')"> </span>
         </div>
     </nav>
 
     <div class="events-main">
         <div class="events-title">
             <div>Evenimente</div>
-            <div>(WIP)</div>
+        </div>
+        
+        <div class="events-card-area">
+            <div class="events-card" onClick="alert('Culturale - WIP')">
+                <div class="events-card-title">
+                    <div>Culturale</div>
+                </div>
+            </div>
+            <div class="events-card" onClick="alert('Muzicale - WIP')">
+                <div class="events-card-title">
+                    <div>Muzicale</div>
+                </div>
+            </div>
+            <div class="events-card" onClick="alert('Istorice - WIP')">
+                <div class="events-card-title">
+                    <div>Istorice</div>
+                </div>
+            </div>
         </div>
     </div>
 
