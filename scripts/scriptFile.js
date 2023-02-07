@@ -18,29 +18,20 @@ function prezentare() {
     window.location.href = "#prezentare";
 }
 
-// function makeNav(currentPage)
-// {
-//     let nav = document.getElementById("nav");
+function makeNav(currentPage) 
+{
+    dict = {
+        "landing": "landingBt",
+        "projects": "projectsBt",
+        "events": "eventsBt",
+        "support": "supportBt",
+        "contact": "contactBt"
+    }
 
-//     let logo = document.createElement("img");
-//     logo.src = "res/logo/logo_short.svg";
-//     logo.onclick = home;
-
-//     let prezentare = document.createElement("a");
-//     if (currentPage == "prezentare")
-//     {
-//         prezentare.href = "#prezentare";
-//         prezentare.classList.add("currentPage");
-//     }
-//     else
-//     {
-//         prezentare.href = "index.html";
-//     }
-//     prezentare.innerHTML = "Prezentare";
-
-//     nav.appendChild(document.createElement("img"));
-// }
-
+    $("#nav-placeholder").load("nav.html", function() {
+        $("#" + dict[currentPage]).addClass("currentPage");
+    });
+}
 
 // setInterval(() => {
 //     let title = document.querySelector("img");
