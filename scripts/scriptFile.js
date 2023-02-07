@@ -27,8 +27,9 @@ function makeNav(currentPage)
         "support": "supportBt",
         "contact": "contactBt"
     }
-
-    $("#nav-placeholder").load("nav.html", function() {
+    
+    $.get("nav.html", function(data) {
+        $("#nav-placeholder").replaceWith(data);
         $("#" + dict[currentPage]).addClass("currentPage");
     });
 }
