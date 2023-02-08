@@ -2,28 +2,22 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/global_style.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="/styles/global_style.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/landing.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
     <link href='https://css.gg/css' rel='stylesheet'/>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="/scripts/scriptFile.js"></script>
     <title>Omenia Dacica</title>
 </head>
 
 <body class="landing-body">
-    <script defer src="scripts/scriptFile.js"></script>
-    <nav class="navbar">
-        <img src="res/logo/logo_short.svg" onclick="home()"/>
-        <a class="currentPage" href="#prezentare">Prezentare</a>
-        <a href="proiecte.html">Proiecte</a>
-        <a href="evenimente.html">Evenimente</a>
-        <a href="support.html">Vino alături de noi!</a>
-        <a href="contact.html">Contact</a>
-        <div>
-            <span class="fi fi-gb" style="cursor:pointer" onclick="english('index')"> </span>
-        </div>
-    </nav>
-
+    <nav id="nav-placeholder"></nav>
+    <script>
+        makeNav("index", "ro");
+    </script>
+    
     <div class="landing-main">
         <div class="landing-title">
             <img src="res/logo/text_short.svg"> </img>
@@ -32,7 +26,6 @@
         <div class="findMore" onClick="prezentare()">
                 Află mai multe
                 <i class="gg-chevron-down"></i>
-            </a>
         </div>
         <div class="aboutCard" id="prezentare">
             <div class="title">
@@ -51,6 +44,7 @@
                     <li>promovarea voluntariatului</li>                   
                 </ul>
             </div>
+            
         </div>
         <button type=button class="cta-button" onclick="cta()">Vino alături de noi!</button>
     </div>

@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="styles/projects.css">
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
     <link href='https://css.gg/css' rel='stylesheet'/>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="scripts/scriptFile.js"></script>
     <title>Omenia Dacica - Proiecte</title>
 </head>
 
 <body class="projects-body">
-    <script src="scripts/scriptFile.js"></script>
-    <nav class="navbar">
-        <img src="res/logo/logo_short.svg" onclick="home()"/>
-        <a href="index.html">Prezentare</a>
-        <a class="currentPage" href="proiecte.html">Proiecte</a>
-        <a href="evenimente.html">Evenimente</a>
-        <a href="support.html">Vino alături de noi!</a>
-        <a href="contact.html">Contact</a>
-        <div>
-            <span class="fi fi-gb" style="cursor:pointer" onclick="english('proiecte')"> </span>
-        </div>
-    </nav>
+    <nav id="nav-placeholder"></nav>
+    <script>
+        makeNav("projects", "ro");
+    </script>
 
     <div class="projects-main">
         <div class="projects-title">
             <div>Proiecte</div>
-            <div>(WIP)</div>
+        </div>
+        <div class="projects-card-area">
+            <div class="projects-card" onClick="alert('În derulare - WIP')">
+                <div class="projects-card-title">
+                    <div>În derulare</div>
+                </div>
+            </div>
+            <div class="projects-card" onClick="alert('Finalizate - WIP')">
+                <div class="projects-card-title">
+                    <div>Finalizate</div>
+                </div>
+            </div>
         </div>
     </div>
 
