@@ -44,7 +44,8 @@ pageNavBts = {
 
 function makeNav(currentPage, lang) 
 {  
-    $.get("./components/nav.html", function(data) {
+    var langRef = lang == "en" ? "../" : "";
+    $.get(langRef + "/components/nav.html", function(data) {
         $("#nav-placeholder").replaceWith(data);
         $("#" + pageNavBts[currentPage]).addClass("currentPage");
 
