@@ -49,6 +49,8 @@ function makeNav(currentPage, lang)
         $("#nav-placeholder").replaceWith(data);
         $("#" + pageNavBts[currentPage]).addClass("currentPage");
 
+        $("#logoBt").src(root + "/res/logo/logo_short.svg");
+
         if (lang == "ro") {
             $("#" + "langBt").on("click", function() {
                 english(currentPage);
