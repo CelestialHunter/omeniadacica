@@ -1,12 +1,24 @@
-<nav class="myNav">
-
-    <img src="res/logo_full.svg" href="index.html" width="30%" style="background-color: white;"/>
-    <div class="nav-links">
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="portofoliu.html">portofoliu</a></li>
-            <li><a href="despre.html">despre noi</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
+<nav class="navbar">
+    <img src="/res/logo/logo_short.svg" onclick="home()"/>
+    <a id="indexBt" href="index.html">Prezentare</a>    
+    <div class="nav_drop">
+        <a id="projectsBt" href="proiecte.html">Proiecte</a>
+        <span id="projectsDrop" class="nav_drop_content">
+            <span class="nav_drop_item" onClick="alert('În derulare - WIP')"></span>
+            <span class="nav_drop_item" onClick="alert('Finalizate - WIP')"></span> 
+        </span>
+    </div>
+    <div class="nav_drop">
+        <a id="eventsBt" href="evenimente.html">Evenimente</a>
+        <span id="eventsDrop" class="nav_drop_content">
+            <span class="nav_drop_item" onClick="alert('Culturale - WIP')">Culturale</span>
+            <span class="nav_drop_item" onClick="alert('Muzicale - WIP')">Muzicale</span>
+            <span class="nav_drop_item" onClick="alert('Istorice - WIP')">Istorice</span>   
+        </span>
+    </div>
+    <a id="supportBt" href="support.html">Vino alături de noi!</a>
+    <a id="contactBt" href="contact.html">Contact</a>
+    <div>
+        <span id="langBt" class="fi lang" style="cursor:pointer" onclick="english('index')"> </span>
     </div>
 </nav>

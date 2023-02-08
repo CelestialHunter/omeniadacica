@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global_style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/e6eb74b20d.js" crossorigin="anonymous"></script> -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="scripts/scriptFile.js"></script>
+    <title id="title">Omenia Dacica - Alătură-te</title>
+</head>
+<body class="contact-body">
+    <nav id="nav-placeholder"></nav>
+    <script>
+        makeNav("contact", "ro");
+    </script>
+
+    <div class="contact-main">
+        <div class="contact-title">
+            <img src="res/logo/logo_full.svg"> </img>               
+            <div class="contact-card">
+                <div class="contact-card-entry">                    
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div class="contact-card-entry-info" 
+                        onclick='window.location.href = "mailto:contact@fundatia-omenia-dacica.ro";'>
+                        contact@fundatia-omenia-dacica.ro
+                    </div>
+                </div>
+                <div class="contact-card-entry">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <div class="contact-card-entry-info"
+                        onclick='window.location.href = "tel:+40 744 000 000";'>
+                        +40 744 000 000
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    
+</body>
+
+</html>
