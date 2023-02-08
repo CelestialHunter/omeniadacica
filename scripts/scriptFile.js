@@ -48,8 +48,6 @@ function makeNav(currentPage, lang)
         $("#nav-placeholder").replaceWith(data);
         $("#" + pageNavBts[currentPage]).addClass("currentPage");
 
-        $("#logoBt").src("./res/logo/logo_short.svg");
-
         if (lang == "ro") {
             $("#" + "langBt").on("click", function() {
                 english(currentPage);
@@ -88,14 +86,3 @@ function makeNav(currentPage, lang)
         
     });
 }
-
-// setInterval(() => {
-//     let title = document.querySelector("img");
-//     let s = window.getComputedStyle(title);
-//     let myFilter = s.getPropertyValue("filter");
-
-//     let oF = myFilter.match("[01]");
-//     console.log(oF[0]);
-
-//     title.style.filter = "invert(" + (1-oF[0]) + ")";
-// }, 1000);
