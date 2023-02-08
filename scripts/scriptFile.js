@@ -43,13 +43,12 @@ pageNavBts = {
 }
 
 function makeNav(currentPage, lang) 
-{    
-    var root = document.location.host;
-    $.get(root + "/components/nav.html", function(data) {
+{  
+    $.get("./components/nav.html", function(data) {
         $("#nav-placeholder").replaceWith(data);
         $("#" + pageNavBts[currentPage]).addClass("currentPage");
 
-        $("#logoBt").src(root + "/res/logo/logo_short.svg");
+        $("#logoBt").src("./res/logo/logo_short.svg");
 
         if (lang == "ro") {
             $("#" + "langBt").on("click", function() {
