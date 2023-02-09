@@ -42,10 +42,24 @@ pageNavBts = {
     "contact": "contactBt"
 }
 
+function UrlExists(url)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status!=404;
+}
+
 function makeNav(currentPage, lang) 
 {  
     var langRef = lang == "en" ? "../" : "";
-    $.get("./components/nav.html", function(data) {
+
+    var navPath = "./components/nav.html";
+    
+    if (UrlExists(navPath) == false)
+        navPath = "./omeniadacica/components/nav.html";
+
+    $.get(navPath, function(data) {
         $("#nav-placeholder").replaceWith(data);
         $("#" + pageNavBts[currentPage]).addClass("currentPage");
 
