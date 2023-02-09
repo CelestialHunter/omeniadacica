@@ -137,8 +137,7 @@
 .nav-toggle i {
     position: absolute;
     right: 5vw;
-    top: 2.5vh;
-    right: 5vw;
+    top: 4vh;
 }
 
 @media (max-width: 800px) {
@@ -162,6 +161,7 @@
 
     .navbar img {
         max-width: 30%;
+        height: 12vh;
     }
 
     .nav-links {

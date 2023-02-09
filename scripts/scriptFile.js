@@ -54,16 +54,18 @@ function makeNav(currentPage, lang)
 {  
     var langRef = lang == "en" ? "../" : "";
 
-    var navPath = "./components/nav.html";
+    var navPath = "components/nav.html";
+    var logoPath = "res/logo/logo_short.svg";
+    var rootPath = "./";
     
-    if (UrlExists(navPath) == false)
-        navPath = "./omeniadacica/components/nav.html";
+    if (UrlExists(rootPath + navPath) == false)
+        rootPath = "./omeniadacica/";
 
-    $.get(navPath, function(data) {
+    $.get(rootPath + navPath, function(data) {
         $("#nav-placeholder").replaceWith(data);
         $("#" + pageNavBts[currentPage]).addClass("currentPage");
 
-        $("#logoBt").attr("src", langRef + "/res/logo/logo_short.svg");
+        $("[id=logoBt]").attr("src", langRef + rootPath + logoPath);
 
         if (lang == "ro") {
             $("[id=langBt]").on("click", function() {
