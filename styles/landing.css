@@ -10,7 +10,7 @@
     margin: 0;
     background-image: url("../res/images/index/index_bg.jpg");
     background-repeat: no-repeat;
-    background-position: auto;
+    background-position: center;
     background-size: cover;
     background-attachment:fixed;
     position: static;

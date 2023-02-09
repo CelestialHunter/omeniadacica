@@ -45,18 +45,18 @@ pageNavBts = {
 function makeNav(currentPage, lang) 
 {  
     var langRef = lang == "en" ? "../" : "";
-    $.get(langRef + "/components/nav.html", function(data) {
+    $.get("./components/nav.html", function(data) {
         $("#nav-placeholder").replaceWith(data);
         $("#" + pageNavBts[currentPage]).addClass("currentPage");
 
         $("#logoBt").attr("src", langRef + "/res/logo/logo_short.svg");
 
         if (lang == "ro") {
-            $("#" + "langBt").on("click", function() {
+            $("[id=langBt]").on("click", function() {
                 english(currentPage);
             }).addClass("fi-gb");
             for(var key in roNavBts) {
-                $("#" + key).text(roNavBts[key]);
+                $("[id=" + key + "]").text(roNavBts[key]);
             }
 
             $("#projectsDrop").children().eq(0).text("În derulare");
@@ -67,11 +67,11 @@ function makeNav(currentPage, lang)
             $("#eventsDrop").children().eq(2).text("Istorice");
         }
         else if(lang == "en") {
-            $("#" + "langBt").on("click", function() {
+            $("[id=langBt]").on("click", function() {
                 romanian(currentPage);
             }).addClass("fi-ro");
             for(var key in enNavBts) {
-                $("#" + key).text(enNavBts[key]);
+                $("[id=" + key + "]").text(enNavBts[key]);
             }
 
             $("#projectsDrop").children().eq(0).text("Ongoing");
@@ -84,8 +84,10 @@ function makeNav(currentPage, lang)
             for(var key in pageNavBts) {
                 $("#" + pageNavBts[key]).attr("href", "en/" + key + ".html");
             }
-        }
-
-        
+        }        
     });
+}
+
+function toggleMenu() {
+    document.getElementsByClassName("nav-links")[0].classList.toggle("active");
 }
