@@ -65,7 +65,7 @@ function makeNav(currentPage, lang)
         $("#nav-placeholder").replaceWith(data);
         $("#" + pageNavBts[currentPage]).addClass("currentPage");
 
-        $("[id=logoBt]").attr("src", langRef + rootPath + logoPath);
+        $("[id=logoBt]").attr("src", rootPath + logoPath);
 
         if (lang == "ro") {
             $("[id=langBt]").on("click", function() {
