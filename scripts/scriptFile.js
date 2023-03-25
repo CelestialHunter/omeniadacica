@@ -58,8 +58,8 @@ function makeNav(currentPage, lang)
     var logoPath = "res/logo/logo_short.svg";
     var rootPath = "./";
     
-    if (UrlExists(rootPath + navPath) == false)
-        rootPath = "./omeniadacica/";
+    // if (UrlExists(rootPath + navPath) == false)
+    //     rootPath = "./omeniadacica/";
 
     $.get(langRef + rootPath + navPath, function(data) {
         $("#nav-placeholder").replaceWith(data);
