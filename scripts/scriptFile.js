@@ -61,11 +61,11 @@ function makeNav(currentPage, lang)
     if (UrlExists(rootPath + navPath) == false)
         rootPath = "./omeniadacica/";
 
-    $.get(rootPath + navPath, function(data) {
+    $.get(langRef + rootPath + navPath, function(data) {
         $("#nav-placeholder").replaceWith(data);
         $("#" + pageNavBts[currentPage]).addClass("currentPage");
 
-        $("[id=logoBt]").attr("src", rootPath + logoPath);
+        $("[id=logoBt]").attr("src", langRef + rootPath + logoPath);
 
         if (lang == "ro") {
             $("[id=langBt]").on("click", function() {
